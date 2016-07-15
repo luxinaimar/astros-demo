@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="renderer" content="webkit"/>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="{{$g.cdn}}/img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="{{$g.cdn}}/css/p/{{pageName}}.css?v={{$ver}}"/>
+    </head>
+    <body>
+        <div class="g-main">
+            <module:header/>
+            <div class="g-wrap">
+                <point:content/>
+            </div>
+            <module:footer/> 
+        </div>
+        <module:poplayer/> 
+    </body>
+    {{if !nojs}}
+        <script src="{{$g.cdn}}/js/lib/jquery.1.11.3.min.js"></script>
+        <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$ver}}"></script>
+    {{/if}}
+</html>
