@@ -1,26 +1,32 @@
 <div class="design-page-chs">
-    <a href="#" class="design-page-pre show-pre">
+	{{if preName}}
+    <a href="{{preUrl}}" class="design-page-pre show-pre">
         <span>
             <p class="chs-tit">Pre Project</p>
-            <p>Etao Web&Wap</p>
+            <p>{{preName}}</p>
         </span>
     </a>
+    {{else}}
     <a href="javascript:;" class="design-page-pre none-pre">
         <span>
             <p class="chs-tit">Pre Project</p>
             <p>None</p>
         </span>
     </a>
-    <a href="#" class="design-page-next show-next">
+    {{/if}}
+    {{if nextName}}
+    <a href="{{nextUrl}}" class="design-page-next show-next">
         <span>
             <p class="chs-tit">Next Project</p>
-            <p>Letv GameCenter</p>
+            <p>{{nextName}}</p>
         </span>
     </a>
+    {{else}}
     <a href="javascript:;" class="design-page-next none-next">
         <span>
             <p class="chs-tit">Next Project</p>
             <p>None</p>
         </span>
     </a>
+    {{/if}}
 </div>
