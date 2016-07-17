@@ -1,9 +1,23 @@
 <module:layout/normal>
+    <def:content>
     <div class="banner">
         <div class="etaoweb-des"></div>
     </div>
     <div class="product">
-    	<div class="product-des"></div>
+    	<div class="product-des">
+          <div class="slider swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src=$res(h-slider2.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider3.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider1.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider4.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider5.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider6.png) alt=""></li>
+                <li class="swiper-slide"><img src=$res(h-slider7.png) alt=""></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>   
+        </div>
     </div>
     <div class="tj">
     	<div class="jwk-des">
@@ -24,4 +38,8 @@
     <div class="container">
     	<module:design-page-chs/> 
     </div>
+    </def>
+    <def:jspoi>
+    <script src="{{$g.cdn}}/js/lib/swiper.min.js" type="text/javascript"></script>
+    </def>
 </module>

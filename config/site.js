@@ -34,7 +34,7 @@ module.exports = {
     // 模板全局属性
     globalVariables: {
         //默认不写，以本机ip为主
-        // cdn: 'http://127.0.0.1:3104/'
+        //cdn: 'http://lxcdn.aiyingta.com/',
         ver: function() {
             return Date.now;
         }

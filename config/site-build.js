@@ -26,7 +26,7 @@ module.exports = {
     autoAssets: false,
     // 模板全局属性
     globalVariables: {
-        cdn: '.',
+        cdn: 'http://lxcdn.aiyingta.com/',
         // 静态资源版本号
         ver: function() {
             return Date.now;

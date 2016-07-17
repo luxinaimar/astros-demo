@@ -22,7 +22,8 @@
         <module:poplayer/> 
     </body>
     {{if !nojs}}
-        <script src="{{$g.cdn}}/js/lib/jquery.1.11.3.min.js"></script>
-        <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$ver}}"></script>
+        <script src="{{$g.cdn}}/js/lib/jquery.1.11.3.min.js" type="text/javascript"></script>
+        <point:jspoi/>
+        <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$ver}}" type="text/javascript"></script>
     {{/if}}
 </html>
