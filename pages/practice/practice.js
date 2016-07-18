@@ -3,7 +3,7 @@ $(function(){
       domMask = $('.mask'),
       domClose = $('.i-close'),
       domPopLayer = $('.pop-layer'),
-      domPItemHover = $('a',domPList);
+      domPItemHover = $('li',domPList);
     
   domClose.click(function(e){
     e.preventDefault();

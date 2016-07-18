@@ -4,7 +4,7 @@
   "description": "Astros项目的示例站点",
   "main": "server.js",
   "dependencies": {
-    "astros": "^1.0.0",
+    "astros": "~1.0.1",
     "astros-2ximg": "~1.0.1",
     "astros-asset-parse": "~1.0.0",
     "astros-cmd-define": "~1.0.0",
