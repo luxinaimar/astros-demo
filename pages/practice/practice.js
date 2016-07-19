@@ -130,7 +130,7 @@ $(function(){
                       '<p>',
                         pData[i].date,
                       '</p>',
-                      '<p>Software:<em>Cinema4D</em><em>Photoshop</em></p>',
+                      '<p>Software:<em class="soft-ps"></em><em class="soft-ae"></em><em class="soft-ai"></em><em class="soft-c4d"></em><em class="soft-sketch"></em></p>',
                     '</div>',          
                     contentHtml].join('');
     domPop.html(popHtml);

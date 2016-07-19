@@ -35,7 +35,13 @@ module.exports = {
         // 解析页面引用了哪些Web组件
         'astros-resource-refer',
         // JS、CSS内部对图片、字体的相对引用
-        'astros-webcom-refer',
+        //'astros-webcom-refer',
+        {
+            name: 'astros-resource-refer',
+            config: {
+                jsImgPath : 'http://lxcdn.aiyingta.com'
+            }
+        },
         // 支持二倍图自动转一倍图
         'astros-2ximg',
         // 发布时交错属性 
