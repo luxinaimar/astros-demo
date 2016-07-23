@@ -1,14 +1,14 @@
 /**
- * @html:brand
+ * @html:letvgc
  */
 var router = require('express').Router(); // 新建一个 router
-router.get('/brand', function(req, res) {
-    res.render('brand', {
-        title:'品牌',
+router.get('/letvgc', function(req, res) {
+    res.render('letvgc', {
+        title:'乐视tv游戏中心',
         nojs:true,
-        preName:'Etao Web&Wap',
-        preUrl:'etaoweb',
-        nextName:'Letv GameCenter',
+        preName:'Brand',
+        preUrl:'brand',
+        nextName:'Letv',
         nextUrl:'letvgc'
     }, function(err, html){
         res.set('Content-Type', 'text/html');
