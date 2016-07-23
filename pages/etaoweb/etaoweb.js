@@ -7,7 +7,7 @@ $(function(){
       loop:true,
       centeredSlides: true,
       initialSlide:0,
-      autoplay: 1000,
+      autoplay: 2000,
       autoplayDisableOnInteraction : false,
       paginationClickable: true,
       pagination: '.swiper-pagination'

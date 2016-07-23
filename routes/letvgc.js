@@ -5,7 +5,6 @@ var router = require('express').Router(); // 新建一个 router
 router.get('/letvgc', function(req, res) {
     res.render('letvgc', {
         title:'乐视tv游戏中心',
-        nojs:true,
         preName:'Brand',
         preUrl:'brand',
         nextName:'Letv',
