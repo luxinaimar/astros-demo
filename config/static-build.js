@@ -33,13 +33,13 @@ module.exports = {
         // 解析资源
         'astros-asset-parse',
         // 解析页面引用了哪些Web组件
-        'astros-resource-refer',
+        'astros-webcom-refer',
         // JS、CSS内部对图片、字体的相对引用
-        //'astros-webcom-refer',
+        //'astros-resource-refer',
         {
             name: 'astros-resource-refer',
             config: {
-                jsImgPath : 'http://lxcdn.aiyingta.com'
+                jsImgPath : 'http://lxcdn.aiyingta.com/'
             }
         },
         // 支持二倍图自动转一倍图
