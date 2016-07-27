@@ -40,4 +40,20 @@ $(function(){
       },3000)
   }
   sliderPlay();
+
+  //图片飞入动画绑定scroll
+  var domViewDetail = $('.view-detail-img:not(.play)');
+  var body = $(document);
+  var scrollHandle = function(){     
+      if((body.scrollTop()+$(window).height() - domViewDetail.offset().top) > domViewDetail.height()*.5){
+          domViewDetail.addClass('play');
+          body.off('scroll',scrollHandle);
+      }
+       /*sections = $('.sv-section:not(.play)');
+        if(!sections.length){
+            body.off('scroll',scrollHandle);
+        }*/
+  }
+  body.scroll(scrollHandle);
+  scrollHandle();
 })

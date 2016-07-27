@@ -34,16 +34,22 @@
 
 /*图片移动 move-view*/
 @-webkit-keyframes move-view {
-  0%, 100% { margin-top: 0px;} 
+  0%, 100% { margin-top: 0px;}
+  25% { margin-top: -397px;}  
   50% { margin-top: -397px;}
+  75% { margin-top: 0px;}
 }
 @-moz-keyframes move-view {
-  0%, 100% { margin-top: 0px;} 
+  0%, 100% { margin-top: 0px;}
+  25% { margin-top: -397px;}  
   50% { margin-top: -397px;}
+  75% { margin-top: 0px;}
 }
 @keyframes move-view  {
-  0%, 100% {margin-top: 0px;}  
-  50% {margin-top: -397px}
+  0%, 100% { margin-top: 0px;}
+  25% { margin-top: -397px;}  
+  50% { margin-top: -397px;}
+  75% { margin-top: 0px;}
 }
 .homepage{
 	height: 618px;
@@ -62,7 +68,7 @@
 			left: 217px;
 			top: 99px;
 			img{
-				animation: move-view 20s linear 0s infinite;
+				animation: move-view 10s linear 0s infinite;
 			}
 		}
 	}
@@ -113,12 +119,63 @@
 	height: 680px;
 	background: url("detail.jpg") center center no-repeat;
 }
+/*左手机移动 m-letf-move*/
+@-webkit-keyframes m-letf-move {
+  0%{ left: -50px;opacity: .3;} 
+  100% { left: 0px;opacity: 1;}
+}
+@-moz-keyframes m-letf-move {
+  0%{ left: -50px;opacity: .3;} 
+  100% { left: 0px;opacity: 1;}
+}
+@keyframes m-letf-move {
+  0%{ left: -50px;opacity: .3;} 
+  100% { left: 0px;opacity: 1;}
+}
+/*左手机移动 m-right-move*/
+@-webkit-keyframes m-right-move {
+  0%{ left: 50px;} 
+  100% { left: 0px;}
+}
+@-moz-keyframes m-right-move {
+  0%{ left: 50px;} 
+  100% { left: 0px;}
+}
+@keyframes m-right-move {
+  0%{ left: 50px;} 
+  100% { left: 0px;}
+}
 .view-detail{
 	background: url("mappage-bg.jpg");
 	height: 696px;
 	.view-detail-img{
-		background: url("view-detail.png") center center no-repeat;
+		background: url("view-detail.png");
 		height: 696px;
+		width: 1200px;
+		margin: 0px auto;
+		position: relative;
+		span{
+			position: absolute;
+			opacity: 0;
+			&.m-left{
+				top:95px;
+			}
+			&.m-right{
+				top:0px;
+			}
+		}
+		&.play{
+			span{
+				opacity: 1;
+				&.m-left{
+					animation: m-letf-move 2s ease-out 0s;
+				}
+				&.m-right{
+					animation: m-right-move 2s ease-out 0s;
+				}
+			}
+		}
+
 	}
 }
 .pedometer{
