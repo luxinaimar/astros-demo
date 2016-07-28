@@ -35,21 +35,21 @@
 /*图片移动 move-view*/
 @-webkit-keyframes move-view {
   0%, 100% { margin-top: 0px;}
-  25% { margin-top: -397px;}  
+  7% { margin-top: -397px;}  
   50% { margin-top: -397px;}
-  75% { margin-top: 0px;}
+  57% { margin-top: 0px;}
 }
 @-moz-keyframes move-view {
   0%, 100% { margin-top: 0px;}
-  25% { margin-top: -397px;}  
+  7% { margin-top: -397px;}  
   50% { margin-top: -397px;}
-  75% { margin-top: 0px;}
+  57% { margin-top: 0px;}
 }
 @keyframes move-view  {
   0%, 100% { margin-top: 0px;}
-  25% { margin-top: -397px;}  
+  7% { margin-top: -397px;}  
   50% { margin-top: -397px;}
-  75% { margin-top: 0px;}
+  57% { margin-top: 0px;}
 }
 .homepage{
 	height: 618px;
@@ -68,7 +68,7 @@
 			left: 217px;
 			top: 99px;
 			img{
-				animation: move-view 10s linear 0s infinite;
+				animation: move-view 7s linear 0s infinite;
 			}
 		}
 	}
@@ -182,12 +182,98 @@
 	background: url("pedometer.jpg") center center no-repeat;
 	height: 656px;
 }
+
+/*由上到下 down-move*/
+@-webkit-keyframes down-move {
+  0%{ margin-top: -125px;} 
+  100% { margin-top: -15px;}
+}
+@-moz-keyframes down-move {
+  0%{ margin-top: -125px;} 
+  100% { margin-top: -15px;}
+}
+@keyframes down-move {
+  0%{ margin-top: -125px;} 
+  100% { margin-top: -15px;}
+}
+/*由下到上 up-move*/
+@-webkit-keyframes up-move {
+  0%{ margin-top: 93px;} 
+  100% { margin-top: -125px;}
+}
+@-moz-keyframes up-move {
+  0%{ margin-top: 93px;} 
+  100% { margin-top: -15px;}
+}
+@keyframes up-move {
+  0%{ margin-top: 93px;} 
+  100% { margin-top: -15px;}
+}
+/*显示 other-font-display*/
+@-webkit-keyframes other-font-display {
+  0%{ opacity: 0;} 
+  100% { opacity: 1;}
+}
+@-moz-keyframes other-font-display {
+  0%{ opacity: 0;} 
+  100% { opacity: 1;}
+}
+@keyframes other-font-display {
+  0%{ opacity: 0;} 
+  100% { opacity: 1;}
+}
 .other{
 	background: url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABGAAD/4QOPaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzA2NyA3OS4xNTc3NDcsIDIwMTUvMDMvMzAtMjM6NDA6NDIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MzI4OTk5MzQtMzk4MC00NzU5LWI3NGYtYjU3OTU2MzJkMzQ3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ2NkFDQTdFNEIxODExRTY5RTc1OUNCMjM2RDMzM0ZCIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ2NkFDQTdENEIxODExRTY5RTc1OUNCMjM2RDMzM0ZCIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4ZmUyZWItNTg1My00YTI2LTlkMmUtNmY1MGU0YjBjYWZjIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6OTcyYjRiOWMtOGEyYy0xMTc5LThlZWUtZmI2MGJlMDk5NzE3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABAMDAwMDBAMDBAYEAwQGBwUEBAUHCAYGBwYGCAoICQkJCQgKCgwMDAwMCgwMDQ0MDBERERERFBQUFBQUFBQUFAEEBQUIBwgPCgoPFA4ODhQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgACAAIAwERAAIRAQMRAf/EAFEAAQAAAAAAAAAAAAAAAAAAAAgBAQEAAAAAAAAAAAAAAAAAAAMEEAACAgMAAAAAAAAAAAAAAAABAgCR0SJSEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAwbs/KLZOJUB//2Q==");
 	height: 810px;
-	.other-img{
+	.other-img-des{
 		background: url("other.png") center center no-repeat;
-		height: 810px;
+		height: 808px;
+		width: 1200px;
+		margin: 0px auto;
+		padding: 1px;
+		ul{
+			margin: 250px auto 0px;
+			overflow: hidden;
+			width: 1096px;
+			height: 558px;
+			opacity: 0;
+		}
+		li{
+			float:left;
+			width: 274px;
+			.other-font{
+				display: block;
+				margin-left: 80px;
+				opacity: 0;
+			}
+			.other-img{
+				display: block;
+				margin-top: -15px;
+			}
+			&.other-down{
+				margin-top: 107px;			
+			}
+		}
+		&.play{
+			ul{
+				opacity: 1;
+			}
+			li{
+				.other-font{
+					animation: other-font-display 1s ease-out 2s forwards;
+				}
+				&.other-down{
+					.other-img{
+						animation: down-move 2s ease-out 0s;
+					}
+				}
+				&.other-up{
+					.other-img{
+						animation: up-move 2s ease-out 0s;
+					}
+				}
+			}
+		}
 	}
 }
 .watching{

@@ -41,18 +41,20 @@ $(function(){
   }
   sliderPlay();
 
-  //图片飞入动画绑定scroll
-  var domViewDetail = $('.view-detail-img:not(.play)');
+  //动画绑定scroll
+  var sections = $('.play-animation:not(.play)');
   var body = $(document);
-  var scrollHandle = function(){     
-      if((body.scrollTop()+$(window).height() - domViewDetail.offset().top) > domViewDetail.height()*.5){
-          domViewDetail.addClass('play');
+  var scrollHandle = function(){
+      sections.each(function(){
+          var section = $(this);
+         if((body.scrollTop()+$(window).height() - section.offset().top) > section.height()*.5){
+              section.addClass('play');
+         }
+      });
+      sections = $('.play-animation:not(.play)');
+      if(!sections.length){
           body.off('scroll',scrollHandle);
       }
-       /*sections = $('.sv-section:not(.play)');
-        if(!sections.length){
-            body.off('scroll',scrollHandle);
-        }*/
   }
   body.scroll(scrollHandle);
   scrollHandle();
