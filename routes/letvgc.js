@@ -7,7 +7,7 @@ router.get('/letvgc', function(req, res) {
         title:'乐视tv游戏中心',
         preName:'Brand',
         preUrl:'brand',
-        nextName:'Letv STORE',
+        nextName:'Letv Store',
         nextUrl:'letvstore'
     }, function(err, html){
         res.set('Content-Type', 'text/html');

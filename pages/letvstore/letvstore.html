@@ -1,6 +1,9 @@
 <module:layout/normal>
+    <def:content>
     <div class="banner">
-       
+        <div class='vidoe-dis'>
+            <div class='vidoe' id='vidoe'></div>
+        </div>    
     </div>
     <div class="user-flow"></div>
     <div class="store-index"></div>
@@ -62,4 +65,18 @@
    	<div class="container">
     	<module:design-page-chs/> 
     </div>
+    </def>
+    <def:jspoi>
+    <script src="{{$g.cdn}}/js/lib/ckplayer/ckplayer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var flashvars={
+            f:'{{$g.cdn}}/img/tv-animation.mp4',
+            c:0,
+            b:1,
+           // i:"{{$g.cdn}}/img/video.jpg?v={{$ver}}"
+            };
+        var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+        CKobject.embedSWF('{{$g.cdn}}/js/lib/ckplayer/ckplayer.swf','vidoe','ckplayer_vidoe','787','443',flashvars,params);
+    </script>
+    </def>
 </module>
