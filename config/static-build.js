@@ -43,7 +43,7 @@ module.exports = {
             }
         },
         // 支持二倍图自动转一倍图
-        'astros-2ximg',
+        //'astros-2ximg',
         // 发布时交错属性 
         //'astros-img-interlace',
         // 'astros-cmd-dep',

@@ -1,93 +1,93 @@
 $(function(){
   var pData = [
       {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Camera Animation',
+        date:'2016/07/25',
+        software:'<em class="soft-c4d"></em>',
         content:['$res("15_big_1.gif")','$res("15_big_2.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Welcome Design',
+        date:'2016/07/04',
+        software:'<em class="soft-ps"></em><em class="soft-c4d"></em>',
         content:['$res("1_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Building Rendering',
+        date:'2016/06/30',
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
         content:['$res("2_big.jpg")']
      },
      {
-        title:'House Buliding',
+        title:'Street Rendering',
         date:'2016/06/15',
-        software:[1,2],
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
         content:['$res("3_big_1.jpg")','$res("3_big_2.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Running Page',
+        date:'2016/06/10',
+        software:'<em class="soft-ps"></em>',
         content:['$res("4_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Mail Page',
+        date:'2016/06/03',
+        software:'<em class="soft-ps"></em>',
         content:['$res("5_big_1.jpg")','$res("5_big_2.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Shopping Cart Page',
+        date:'2016/05/28',
+        software:'<em class="soft-ps"></em>',
         content:['$res("6_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Icon Design',
+        date:'2016/05/20',
+        software:'<em class="soft-sketch"></em>',
         content:['$res("7_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Icon Design',
+        date:'2016/05/15',
+        software:'<em class="soft-ps"></em>',
         content:['$res("8_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Calculator',
+        date:'2016/05/08',
+        software:'<em class="soft-ps"></em>',
         content:['$res("9_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Weather Animation',
+        date:'2016/04/24',
+        software:'<em class="soft-ae"></em>',
         content:['$res("10_big.gif")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Baymax Animation',
+        date:'2016/04/21',
+        software:'<em class="soft-ae"></em><em class="soft-ps"></em>',
         content:['$res("11_big.gif")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Train Animation',
+        date:'2016/04/17',
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
         content:['$res("12_big.gif")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Mountain Rendering',
+        date:'2016/04/13',
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
         content:['$res("13_big.jpg")']
      },
      {
-        title:'House Buliding',
-        date:'2016/06/15',
-        software:[1,2],
+        title:'Rocket Animation',
+        date:'2016/04/08',
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
         content:['$res("14_big_1.gif")','$res("14_big_2.jpg")']
      }
   ]
@@ -130,7 +130,7 @@ $(function(){
                       '<p>',
                         pData[i].date,
                       '</p>',
-                      '<p>Software:<em class="soft-ps"></em><em class="soft-ae"></em><em class="soft-ai"></em><em class="soft-c4d"></em><em class="soft-sketch"></em></p>',
+                      '<p>Software:',pData[i].software,'</p>',
                     '</div>',          
                     contentHtml].join('');
     domPop.html(popHtml);
@@ -143,6 +143,8 @@ $(function(){
     domMask.hide();
     domPopLayer.hide();
   }
+
+  //<em class="soft-ps"></em><em class="soft-ae"></em><em class="soft-ai"></em><em class="soft-c4d"></em><em class="soft-sketch"></em>
    /*$(window).scroll(function () {
       var height = domPopLayer.height(), //元素的高
         scrollTop = $(window).scrollTop(), //滚动条位置，滚出可视区的位置
