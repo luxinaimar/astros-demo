@@ -6,9 +6,7 @@ router.get('/weather', function(req, res) {
     res.render('weather', {
         title:'聚网天气',
         preName:'Letv Store',
-        preUrl:'letvstore',
-        nextName:'Weather',
-        nextUrl:'weather'
+        preUrl:'letvstore'
     }, function(err, html){
         res.set('Content-Type', 'text/html');
         res.end(html)
