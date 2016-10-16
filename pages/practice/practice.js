@@ -1,6 +1,12 @@
 $(function(){
   var pData = [
       {
+        title:'Flying Lace',
+        date:'2016/10/12',
+        software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
+        content:['$res("16_big.jpg")']
+      },
+      {
         title:'Camera Animation',
         date:'2016/07/25',
         software:'<em class="soft-c4d"></em>',
