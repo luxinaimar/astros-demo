@@ -1,6 +1,12 @@
 $(function(){
   var pData = [
       {
+        title:'试译宝Banner',
+        date:'2016/12/03',
+        software:'<em class="soft-ps"></em><em class="soft-ai"></em>',
+        content:['$res("17_big.jpg")']
+      },
+      {
         title:'Flying Lace',
         date:'2016/10/12',
         software:'<em class="soft-c4d"></em><em class="soft-ps"></em>',
